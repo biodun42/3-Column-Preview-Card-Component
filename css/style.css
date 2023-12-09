@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+:root{
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --Transparentwhiteparagraphs: hsla(0, 0%, 100%, 0.75);
+    --Verylightgraybackgroundeadingsbuttons: hsl(0, 0%, 95%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Big Shoulders Display', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Verylightgraybackgroundeadingsbuttons);
+}
+.containerwrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.company1{
+    background-color: var(--Brightorange);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+.company1 img{
+    width: 55px;
+    height: 35px;
+}
+.companytextheader{
+    font-size: 2rem;
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: var(--Verylightgraybackgroundeadingsbuttons);
+}
+.companytext{
+    word-spacing: 0.2rem;
+    line-height: 21px;
+    color: var(--Transparentwhiteparagraphs);
+    width: 200px;
+    font-weight: 500;
+    opacity: 0.75;
+    font-size: 0.85rem;
+    font-family: 'Lexend Deca', sans-serif;
+    padding-bottom: 2rem;
+}
+.findout{
+    padding: 10px 15px;
+    background-color: var(--Verylightgraybackgroundeadingsbuttons);
+    color: var(--Brightorange);
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    border: none;
+    width: 130px;
+}
+.findout:hover{
+    background-color: transparent;
+    border: 1px solid var(--Verylightgraybackgroundeadingsbuttons);
+    color: var(--Verylightgraybackgroundeadingsbuttons);
+    cursor: pointer;
+}
+.company2{
+    background-color: var(--Darkcyan);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+    gap: 2rem;
+}
+.company2 img{
+    width: 55px;
+    height: 35px;
+}
+.findout2{
+    padding: 10px 15px;
+    background-color: var(--Verylightgraybackgroundeadingsbuttons);
+    color: var(--Darkcyan);
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    border: none;
+    width: 130px;
+}
+.findout2:hover{
+    background-color: transparent;
+    border: 1px solid var(--Verylightgraybackgroundeadingsbuttons);
+    color: var(--Verylightgraybackgroundeadingsbuttons);
+    cursor: pointer;
+}
+.company3{
+    background-color: var(--Verydarkcyan);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+.company3 img{
+    width: 55px;
+    height: 35px;
+}
+.findout3{
+    padding: 10px 15px;
+    background-color: var(--Verylightgraybackgroundeadingsbuttons);
+    color: var(--Verydarkcyan);
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    border: none;
+    width: 130px;
+}
+.findout3:hover{
+    background-color: transparent;
+    border: 1px solid var(--Verylightgraybackgroundeadingsbuttons);
+    color: var(--Verylightgraybackgroundeadingsbuttons);
+    cursor: pointer;
+}
+@media screen and (max-width: 768px){
+    .containerwrapper{
+        flex-wrap: wrap;
+        height: 100vh;
+        padding: 1rem;
+    }
+    .company1{
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+    .company2{
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+    .company3{
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+    
+}
+@media screen and (max-width: 500px){
+    .containerwrapper{
+        flex-wrap: none;
+        padding: 0.5rem;
+    }
+    .company1{
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+    .company2{
+        border-radius: 0 0 0 0;
+    }
+    .company3{
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+    
+    
+}
+
