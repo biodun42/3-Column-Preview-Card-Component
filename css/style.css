@@ -18,9 +18,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
+    /* width: 100%; */
     background-color: var(--Verylightgraybackgroundeadingsbuttons);
+    height: 100vh;
 }
 .containerwrapper{
     display: flex;
@@ -136,37 +136,93 @@
     cursor: pointer;
 }
 @media screen and (max-width: 768px){
-    .containerwrapper{
-        flex-wrap: wrap;
-        height: 100vh;
+    .container{
+        height: auto;
         padding: 1rem;
     }
-    .company1{
-        border-radius: 0.5rem 0 0 0.5rem;
-    }
-    .company2{
-        border-radius: 0 0.5rem 0.5rem 0;
-    }
-    .company3{
-        border-radius: 0 0 0.5rem 0.5rem;
-    }
-    
-}
-@media screen and (max-width: 500px){
     .containerwrapper{
-        flex-wrap: none;
-        padding: 0.5rem;
+        flex-direction: column;
     }
     .company1{
         border-radius: 0.5rem 0.5rem 0 0;
+        width: 350px;
     }
     .company2{
         border-radius: 0 0 0 0;
+        width: 350px;
     }
     .company3{
-        border-radius: 0 0 0.5rem 0.5rem;
+        border-radius: 0 0 0.5rem 0.5rem;   
+        width: 350px;
+    }
+    .companytext{
+        width: 250px;
+    }
+    .findout{
+        width: 200px;
+    }
+    .findout2{
+        width: 200px;
+    }
+    .findout3{
+        width: 200px;
     }
     
     
 }
-
+@media screen and (max-width: 425px){
+    .container{
+        height: auto;
+        padding: 1rem;
+    }
+    .company1{
+        width: 350px;
+    }
+    .company2{
+        width: 350px;
+    }
+    .company3{
+        width: 350px;
+    }
+    .companytext{
+        width: 300px;
+    }
+    .findout{
+        width: 160px;
+    }
+    .findout2{
+        width: 160px;
+    }
+    .findout3{
+        width: 160px;
+    }
+    
+}
+@media screen and (max-width: 350px){
+    .container{
+        height: auto;
+        padding: 1rem;
+    }
+    .company1{
+        width: 250px;
+    }
+    .company2{
+        width: 250px;
+    }
+    .company3{
+        width: 250px;
+    }
+    .companytext{
+        width: 200px;
+    }
+    .findout{
+        width: 130px;
+    }
+    .findout2{
+        width: 130px;
+    }
+    .findout3{
+        width: 130px;
+    }
+    
+}
